@@ -8,9 +8,9 @@ self.addEventListener('install', (e) => {
             '/css/style.css',
             '/css/Appoint.css',
             '/images/fox1.jpg',
-            '/pwa-examples/a2hs/images/noun-appointment-4878328.png',
-            '/pwa-examples/a2hs/images/noun-setting-1150962.png',
-            '/pwa-examples/a2hs/images/noun-upcoming-4588070.png',
+            '/images/noun-appointment-4878328.png',
+            '/images/noun-setting-1150962.png',
+            '/images/noun-upcoming-4588070.png',
         ])),
     );
 });
