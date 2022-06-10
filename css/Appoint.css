@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #94CBFF 0%, #FFFFFF 79.17%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    padding-top: 41px;
+    width: 1024px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.formAppoint {
+    border-radius: 35px;
+    backdrop-filter: blur(15px);
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgb(116 175 204 / 65%), inset 12px 12px 24px #e8f4ff, inset -24px -24px 48px #bfe0ff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 29em;
+    row-gap: .5em;
+    padding: 22px 23px;
+}
+
+.formAppoint h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+span {
+    cursor: pointer;
+}
+
+.appoint {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 9px;
+}
+
+label {
+    color: #2c2b2b !important;
+    font-size: 1em !important;
+    font-weight: 500 !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    color: #2c2b2b !important;
+}
+
+.add-button {
+    width: 11em;
+    height: 3em;
+}
+
+.form-input {
+    width: 25em;
+    height: 4em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    backdrop-filter: blur(15px);
+    border-left: 5px solid #4AA8FF;
+    box-shadow: 1px 2px 1px #b1c5d4;
+    outline: none;
+    font-size: .88em;
+    padding-left: 20px;
+    display: flex;
+}
+
+.form-input.otherInput {
+    width: 28.5em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.input-group-text.span {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #4AA8FF;
+    box-shadow: inset 6px 6px 24px #0F87F7, inset -12px -12px 24px #0B75D7;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.btnConfirm {
+    border: none;
+    color: #FFFFFF;
+    backdrop-filter: blur(15px);
+    background: #4AA8FF;
+    box-shadow: inset 6px 6px 24px #0F87F7, inset -12px -12px 24px #0B75D7;
+    border-radius: 15px;
+    width: 16em;
+    height: 4em;
+    font-size: 1em;
+    font-weight: 700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.btnConfirm:active {
+    background: #aef490;
+    box-shadow: inset 6px 6px 24px #85f08f, inset -12px -12px 24px #419e44;
+}
+
+.btnB {
+    display: flex;
+    justify-content: center;
+}

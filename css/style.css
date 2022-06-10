@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #94CBFF 0%, #FFFFFF 79.17%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    padding-top: 41px;
+    width: 1024px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form {
+    border-radius: 35px;
+    backdrop-filter: blur(15px);
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgb(116 175 204 / 65%), inset 12px 12px 24px #e8f4ff, inset -24px -24px 48px #bfe0ff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 26em;
+    row-gap: 5.5em;
+}
+
+.content {
+    padding: 22px 23px;
+}
+
+.form h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+span {
+    cursor: pointer;
+}
+
+.appointday {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 9px;
+}
+
+.menuB button {
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+    border: none;
+    backdrop-filter: blur(15px);
+    background: #4AA8FF;
+    color: #FFFFFF;
+    box-shadow: inset 6px 6px 24px #1d83e2, inset -12px -12px 24px #7ec1ff, 3px 3px 2px #98c9f3;
+}
+
+.add-button {
+    width: 11em;
+    height: 3em;
+}
+
+.txtContent {
+    background: #60ffb3;
+    width: auto;
+    padding: 2px 26px;
+    border-radius: 13px;
+}
+
+h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+p {
+    margin: 5px;
+}
+
+.menuB {
+    display: flex;
+    justify-content: center;
+    background: white;
+    column-gap: 2em;
+    align-items: center;
+    height: 68px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 41px rgb(116 175 204 / 0%), inset 1px -1px 2px #e8f4ff, inset -24px -24px 33px #bfe0ff9c;
+}
