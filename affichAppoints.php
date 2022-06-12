@@ -1,5 +1,5 @@
 <?php
-$appoints = json_decode(file_get_contents("https://farmata-sidibe.github.io/appointment/API/appoints"));
+$appoints = json_decode(file_get_contents("https://farmata-sidibe.github.io/appointment/api/appoints"));
 ob_start();
 ?>
 <!DOCTYPE html>
