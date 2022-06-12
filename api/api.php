@@ -16,9 +16,9 @@ function getAppointById($id){
     $stmt = $pdo->prepare($req);
     $stmt->bindValue(":id",$id,PDO::PARAM_INT);
     $stmt->execute();
-    $appoints = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $appoint = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
-    sendJSON($appoints);
+    sendJSON($appoint);
     
 }
 function insertAppoint(){

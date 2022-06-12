@@ -1,3 +1,7 @@
+<?php
+$appoints = json_decode(file_get_contents("https://farmata-sidibe.github.io/appointment/API/appoints"));
+ob_start();
+?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -15,16 +19,6 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
 
-    <script>
-        window.addEventListener('load', () => {
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register('/sw.js')
-
-            }
-
-        })
-    </script>
-
     <title>Appointment</title>
 </head>
 
@@ -38,20 +32,22 @@
             <div class="content">
                 <h2>Appointment today</h2>
                 <div class="appointday">
+                    <?php foreach($appoints as $appoint): ?>
                     <div class="rdv">
                         <p>
-                            10:00
+                            <?= $appoint->time ?>
                         </p>
                         <div class="txtContent">
                             <h3>
-                                Rendez-vous
+                                <?= $appoint->title ?>
                             </h3>
                             <p>
-                                12/06/2022
+                                <?= $appoint->date ?>
                             </p>
                         </div>
                         <hr>
                     </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
